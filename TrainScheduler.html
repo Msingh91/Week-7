@@ -1,0 +1,141 @@
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Train</title>
+
+  <!-- Bootstrap is used to make game look nicer -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">  
+
+ 
+
+ <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</head>
+
+
+
+<body>
+      <!-- Bootstrap container that will hold contents of site -->
+      <div class="container">
+      <div class="well jumbotron">
+        <div class="container">
+          <h1 class="text-center"> Train Scheduler </h1>
+          <h4 class="text-center"> Choo Choo!!</h4>
+        
+          
+           <div class="text-center"><button class="btn btn-info btn-xs swag-button"><span class="glyphicon glyphicon-flash"></span> Swag!</button></div>
+
+          
+
+
+      </div>
+      </div>
+  
+      <!-- Game sections to be held here -->
+      <div class="row">
+      <div class="col-md-12">
+
+      <!-- Panel that holds word to be guessed -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+
+        <h3 class="text-center panel-title"><strong>Current Train Schedule </strong><span class="glyphicon glyphicon-eye-open"></span></h3>
+        </div>
+  
+      <div class="panel-body">
+      
+      <table id="my-table" class="table">
+  <thead>
+    <tr>
+      <th>Train Name</th>
+      <th>Destination</th>
+      <th>Frequency</th>
+      <th>Next Arrival</th>
+      <th>Minutes Away</th>
+      
+    </tr>
+  </thead>
+<tbody>
+
+</tbody>
+
+</table>
+
+
+
+
+
+
+      </div>
+      </div>
+      </div>
+      </div>
+
+
+      <div class = "row">
+      <div class = "col-md-12">
+
+      <div class = "panel panel-default">
+        <div class = "panel-heading">
+        <h3 class="text-center panel-title"><strong>Add Train </strong><span class="glyphicon glyphicon-eye-open"></span></h3>
+        </div>
+
+        <div class = "panel-body">
+
+        <div class = "form-group">
+
+              <strong>Train Name<strong><br>
+              <input type="text" class="form-control" id="train" required><br><br>
+              <strong>Destination</strong><br>
+              <input type="text" class="form-control" id="destination" required><br><br>
+              <strong>First Train Time(HH:mm - military time)</strong><br>
+              <input type="text" class ="form-control" id="time"><br><br>
+              <strong>Frequency</strong><br>
+              <input type="text" class="form-control" id="frequency"><br><br>
+
+              <button id="submit" class="btn btn-info btn-lg swag-button"><span class="glyphicon glyphicon-flash"></span> Submit</button>
+
+
+        </div>
+    
+
+        </div>
+
+        </div>
+        </div>
+        </div>
+
+
+            
+
+           
+
+
+
+
+
+
+
+
+        
+
+
+          
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>    
+  <script src="TrainScheduler.js"></script>
+
+</body>
+
+</html>
